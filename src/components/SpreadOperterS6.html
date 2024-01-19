@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // spread operator
+    // it is use to copy some or all part form array or object 
+   /* let a=[1,2,3];
+    let b=[4,5,6];
+    let combine=[...a,...b]
+    document.writeln(combine)
+
+    let arr=[10,20,30,40]
+    const[one, two ,...rest]=arr
+    document.writeln(one)
+    document.writeln(two)  
+    document.writeln(rest)
+
+    // object
+    const peson1={
+        name:"shubha",
+        age:22,
+        id:100
+
+    }
+    const peson2={
+        name:"sham",
+        age:40,
+        mark:55,
+        id:105
+
+    }
+    const update={...peson1,...peson2}
+    console.log(update)  */
+ 
+    const name=["shubham","sham"]
+    const names=["ganesh","ram"]
+    const upgrade=[...names,...name]
+    console.log(upgrade)
+
+    const num=[110,102,0,1013,12,1000]
+    const[one , two , third, four,...rest]=num
+    console.log(one,two,third)
+
+    // object addition
+    const p1={ 
+        name:"shaubham",id:100
+    }
+    const p2={
+        name:"shubhu",mark:155
+    }
+    const combinresult={...p1,...p2}
+    console.log(combinresult)
+
+
+    const n=[10,12,13,14,15]
+    const m=[20,21,22,23,24]
+    const nm=[...n,...m]
+    console.log(nm)
+
+    const arr=[1,2,3,4,5,6]
+    const[ones, twos,thirds,...rests]=arr
+    console.log(ones,thirds,twos)
+
+    const n1={
+        n:22,m:50
+    }
+    const n2={
+        p:100,m:50
+    }
+    const res={...n1,...n2}
+    console.log(res)
+
+
+</script>
+</html>

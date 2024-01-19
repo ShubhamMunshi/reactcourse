@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="c"> </p>
+    <p id="d"></p>
+</body>
+<script>
+    // arrow function is used  as it has very short SyntaxError
+    // syntax: function name=(val)=>{
+    //     returns statement
+    // }
+
+    // here if we want to return only one statemnet then we need not to use {}
+    // we can directly use return statement
+
+    // Note: we can not directly call arrow function into html body we have to
+    // use following approach
+
+//     Greet=(name)=>{
+//         return "Hello Sir" + name
+//     }
+//    document.getElementById("demo").innerHTML= Greet(" shuham")
+
+     Congrats=(name)=>{
+       document.writeln("Congratulation Mr "+name)
+     }
+     document.getElementById("c").innerHTML=Congrats("shubham")
+
+     Welcome=(name)=>{
+     document.writeln("Hello "+name)
+     }
+     document.getElementById("d").innerHTML=Welcome("Prkashji")
+
+
+     // this keyword
+    /* const x={
+        name:"shubham", age:23,
+
+       show: function(){
+        // in normal function this always refer to the given js object here x's object
+        console.log(this.name)
+        setTimeout(function(){
+            // but here in givne show function there is one another function  where 
+            // now this refer to window object not to x's object
+            console.log(this)
+        },100)
+        setTimeout(()=>{
+            // but in arrow function case it always points to the x's object
+            console.log(this)
+
+        },200)
+       }
+         
+     }
+     x.show()*/
+
+    const y={
+        name:"shubham munshi", age:22,
+        show: function(){
+            console.log(this)
+
+            setTimeout(() => {
+                console.log(this)
+            }, 200);
+
+            setTimeout(function() {
+              console.log(this)  
+            },100);  
+        }
+        
+         
+    }
+    y.show()
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // class is the function is javascript but here we use keyword 'class'
+    // Name of the class is in the pascal convention ex., class ShubhamMunshi
+    // extends : This is use for inheritence for extending class to another class
+    // Every class has its constructors()
+
+    class Car{
+        constructor(name){
+            document.writeln("The name of the student is "+name)
+        }
+    }
+    class MyCar extends Car{
+        constructor(name){
+            super(name)
+            document.writeln("This is child class of the Car class")
+        }
+    }
+
+     const s1 = new MyCar("shubham Munshi")
+
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /* Desturctuing : it means take only required from the  array , function and object*/
+        // destructuring the array
+
+    const person=['shubham',22,101];
+    const [name, age]=person
+    document.write(name)
+
+       // destructuring the function
+
+    function calculate(a,b){
+   const add=a+b;
+   const subtract= a-b
+   return[add,subtract]
+    };
+   const[addition, subtraction]=calculate(6,6)
+   document.write("the addtiotion is "+addition)
+
+    // destructuring the object
+   const persons={
+    name:"shubham",
+    age:23
+   }
+
+   showObject(persons);
+  function showObject({name, age}) {
+    document.write(" the name is "+name)
+  }
+
+   
+
+</script>
+</html>
